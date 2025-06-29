@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://college-project-backend-y10b.onrender.com',
+  baseURL: 'https://college-project-backend-y10b.onrender.com/api',
 });
 
 instance.interceptors.request.use(config => {
