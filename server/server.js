@@ -22,4 +22,4 @@ app.use('/api/users', userRoutes);
 
 
 
-app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.port}`));
+app.listen(port, () => console.log(`Server running on ${port}`));
