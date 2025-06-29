@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const port = process.env.PORT || 5000;
 // DB connect
 connectDB();
 
@@ -21,4 +22,4 @@ app.use('/api/users', userRoutes);
 
 
 
-app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.port}`));
