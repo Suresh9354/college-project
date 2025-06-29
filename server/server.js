@@ -13,7 +13,7 @@ app.use(express.json());
 
 const port = process.env.PORT || 5000;
 // DB connect
-connectDB();
+//connectDB();
 
 // Routes
 app.use('/api/auth', authRoutes);
