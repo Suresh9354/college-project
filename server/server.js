@@ -8,7 +8,10 @@ const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://college-project-frontend-ushi.onrender.com', // ✅ Your deployed frontend URL
+  credentials: true // if you're using cookies or sessions
+}));
 app.use(express.json());
 
 const port = process.env.PORT || 5000;
